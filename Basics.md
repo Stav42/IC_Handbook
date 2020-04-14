@@ -14,3 +14,22 @@ The IC consists of 2 comparators made of op amps, a discharge transistor, potent
 
 ![555](https://user-images.githubusercontent.com/58845531/79270640-20f37900-7ebc-11ea-9a36-8fcd124b9145.png)
 
+### GND Pin
+Pin-1 is a GND pin which is used to supply a zero voltage to the IC.
+
+### Trigger Pin
+Pin 2 is the trigger pin and connected to the inverting input of the lower comparator. A comparator essentially compares the voltages given at the two inputs. If the voltage at non inverting input is greater, it basically gives a digital output of 1 otherwise 0. The output here depends on the voltage given at trigger pin. These binary values convert the flip flop from set to RST (reset)
+
+### Output Pin
+Pin 3 is the output pin. It gets the output from the flip flop.
+
+### Reset Pin
+Resets the flip flop
+
+### Control Voltage Pin
+Pin-5 is the control voltage pin used to control the pulse width of the output waveform and also the levels of threshold and trigger. When an external voltage is applied to this pin, then the output waveform will be modulated
+
+### Threshold Pin
+Pin-6 is the threshold pin, when the voltage is applied to threshold pin, then it contrasts with a reference voltage. The set state of the FF can be depends on the amplitude of this pin.
+
+Pin 7 is the discharge pin and pin 8 is voltage supply
