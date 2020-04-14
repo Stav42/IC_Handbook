@@ -33,3 +33,10 @@ Pin-5 is the control voltage pin used to control the pulse width of the output w
 Pin-6 is the threshold pin, when the voltage is applied to threshold pin, then it contrasts with a reference voltage. The set state of the FF can be depends on the amplitude of this pin.
 
 Pin 7 is the discharge pin and pin 8 is voltage supply
+
+They are used in three modes - Astable, Monostable, Bistable. Look'em up (https://www.edgefx.in/555-timer-ic-introduction-and-working-with-operating-modes/)
+
+### Applications
+1. Monostable multivibrator
+2. Voltage controlled oscillator
+3. Ramp generator
