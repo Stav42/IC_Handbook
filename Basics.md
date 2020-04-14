@@ -76,3 +76,25 @@ Pin 5. If CIN is logic 1, the counter won’t count at all. When CIN goes to log
 The pe input is the preset enable line. When this line is logic 0, the counter operates normally. However, when pe becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
 
 ### Multiple 4029s
+If multiple 4029s are cascaded for a larger count, all up/dn pins are connected together and driven from a common signal, as are all bin/dec lines. The CIN and COUT lines form the means of cascading counters and still keeping a fully synchronous count. 
+
+If CIN is logic 1, the counter won’t count at all. When CIN goes to logic 0, the counter operates normally. Then, when the counter reaches its terminal count (9, 15, or 0 depending on the states of up/dn and bin/dec), COUT goes to logic 0. This is connected to the CIN line of the next IC to allow the next higher order of magnitude to count once. Then COUT goes to logic 1 again. 
+
+The first counter IC in the set, representing the least significant digit, has its CIN line grounded to logic 0 so it will always count. The clock input, like up/dn and bin/dec, is fed to all 4029s in an extended counter circuit. This is the signal that represents whatever is to be counted. Any 4029 that is enabled by having its CIN line at logic 0 will change state to the next count when the clock rises from logic 0 to logic 1. Any changes to the CIN and COUT lines will occur just after that rising edge, and so will be ready for the next clock pulse.
+
+## 7447 IC
+74LS47 is a BCD to 7-segment decoder/driver IC. It accepts a binary coded decimal as input and converts it into a pattern to drive a seven-segment for displaying digits 0 to 9. Binary coded decimal (BCD) is an encoding in which each digit of a number is represented by its own binary sequence (usually of four bits).
+
+![7447](https://user-images.githubusercontent.com/58845531/79281559-9ff2ac80-7ed0-11ea-81c4-2ea89eabd31d.png)
+
+![pinout](https://user-images.githubusercontent.com/58845531/79281587-af71f580-7ed0-11ea-875c-7778e023ca34.png)
+
+
+### Description
+74LS47 IC accepts four lines of BCD (8421) input data and generates their complements internally. The data is decoded with seven AND/OR gates to drive indicator LEDs of the seven segment directly. The following picture clarifies the functioning a bit
+
+![Working](https://user-images.githubusercontent.com/58845531/79281751-07a8f780-7ed1-11ea-9dd6-a2e09b48ff55.png)
+
+Here the boxes represent 1 * 1 + 1 * 2 + 0 * 4 + 0 * 8 = 3 which is shown in the LED display.
+
+
