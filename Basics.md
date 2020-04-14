@@ -37,6 +37,7 @@ Pin 7 is the discharge pin and pin 8 is voltage supply
 They are used in three modes - Astable, Monostable, Bistable. Look'em up
 
 Article - https://www.edgefx.in/555-timer-ic-introduction-and-working-with-operating-modes/
+
 Video Explanation - https://youtu.be/i0SNb__dkYI
 
 ### Applications
