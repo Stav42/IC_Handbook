@@ -9,11 +9,14 @@ oscillator applications. The 555 can be used to provide time delays, as an oscil
 as a flip-flop element.Its one of the most used ICs in the industry. It has 8 pins. The pin connections are shown below
 
 <p align="center">
-![Pin-Configuration-of-555-Timer-IC-300x177](https://user-images.githubusercontent.com/58845531/79270221-56e42d80-7ebb-11ea-98f9-c61f02d35f8a.png)
+<img src="https://user-images.githubusercontent.com/58845531/79270221-56e42d80-7ebb-11ea-98f9-c61f02d35f8a.png"/>
+</p> 
 
 The IC consists of 2 comparators made of op amps, a discharge transistor, potential dividers (resistor in this case), a RS flip flop. The supply voltage required is between 4.5 and 16 V. The block diagram is given below
 
-![555](https://user-images.githubusercontent.com/58845531/79270640-20f37900-7ebc-11ea-9a36-8fcd124b9145.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79270640-20f37900-7ebc-11ea-9a36-8fcd124b9145.png"/>
+</p> 
 
 ### GND Pin
 Pin-1 is a GND pin which is used to supply a zero voltage to the IC.
@@ -56,8 +59,9 @@ counters, the need for counting circuits is very great.
 The 4029 IC is a presettable up/down counter which counts in either binary or decade mode depending on the voltage
 level applied at binary/decade input whenever a signal is recieved at the CLOCK. The pin connections are shown below
 
-
-![4029](https://user-images.githubusercontent.com/58845531/79280375-d5e26180-7ecd-11ea-8fce-5c1838e54a22.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79280375-d5e26180-7ecd-11ea-8fce-5c1838e54a22.png"/>
+</p> 
 
 
 The internal schematic diagram of the 4029 is quite complex. However, we can’t reach the internal circuitry in any
@@ -86,15 +90,21 @@ The first counter IC in the set, representing the least significant digit, has i
 ## 7447 IC
 74LS47 is a BCD to 7-segment decoder/driver IC. It accepts a binary coded decimal as input and converts it into a pattern to drive a seven-segment for displaying digits 0 to 9. Binary coded decimal (BCD) is an encoding in which each digit of a number is represented by its own binary sequence (usually of four bits).
 
-![7447](https://user-images.githubusercontent.com/58845531/79281559-9ff2ac80-7ed0-11ea-81c4-2ea89eabd31d.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79281559-9ff2ac80-7ed0-11ea-81c4-2ea89eabd31d.png"/>
+</p> 
 
-![pinout](https://user-images.githubusercontent.com/58845531/79281587-af71f580-7ed0-11ea-875c-7778e023ca34.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79281587-af71f580-7ed0-11ea-875c-7778e023ca34.png"/>
+</p> 
 
 
 ### Description
 74LS47 IC accepts four lines of BCD (8421) input data and generates their complements internally. The data is decoded with seven AND/OR gates to drive indicator LEDs of the seven segment directly. The following picture clarifies the functioning a bit
 
-![Working](https://user-images.githubusercontent.com/58845531/79281751-07a8f780-7ed1-11ea-9dd6-a2e09b48ff55.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79281751-07a8f780-7ed1-11ea-9dd6-a2e09b48ff55.png"/>
+</p> 
 
 Here the boxes represent 1 * 1 + 1 * 2 + 0 * 4 + 0 * 8 = 3 which is shown in the LED display.
 
