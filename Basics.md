@@ -44,3 +44,35 @@ Video Explanation - https://youtu.be/i0SNb__dkYI
 1. Monostable multivibrator
 2. Voltage controlled oscillator
 3. Ramp generator
+
+## 4029 IC
+
+One of the most common requirements in digital equipment is counting. And the most
+common counting requirement has to do with time. From a basic digital clock (which
+is incorporated into most digitally-controlled appliances) to interval timers and event
+counters, the need for counting circuits is very great.
+
+The 4029 IC is a presettable up/down counter which counts in either binary or decade mode depending on the voltage
+level applied at binary/decade input whenever a signal is recieved at the CLOCK. The pin connections are shown below
+
+
+![4029](https://user-images.githubusercontent.com/58845531/79280375-d5e26180-7ecd-11ea-8fce-5c1838e54a22.png)
+
+
+The internal schematic diagram of the 4029 is quite complex. However, we can’t reach the internal circuitry in any
+case, so the functional diagram to the right is far more useful for our purposes.
+Most of the designations are straightforward and intuitive.
+
+### UP/DN
+Pin 10 tells the counter to count up if it is a logic 1, or down when it is logic 0
+
+### BIN/DEC
+A logic 1 to the bin/dec input i.e Pin 9 causes the counter to operate in binary mode, while a logic 0 switches it to decimal (sometimes called decade) mode.
+
+### CIN
+Pin 5. If CIN is logic 1, the counter won’t count at all. When CIN goes to logic 0, the counter operates normally.
+
+### PE
+The pe input is the preset enable line. When this line is logic 0, the counter operates normally. However, when pe becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
+
+### Multiple 4029s
