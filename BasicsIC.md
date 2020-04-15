@@ -123,6 +123,10 @@ A voltage regulator IC maintains the output voltage at a constant value. 7805 IC
 
 As you may have noticed, there is a significant difference between the input voltage the output voltage of the voltage regulator. This difference between the input and output voltage is released as heat. So to disipate the heat and protect the instrument from malfunctioning, we have 2 options. Either design your circuit so that the input voltage going into the regulator is limited to 2-3 volts above the output regulated voltage or place an appropriate heat sink, that can efficiently dissipate heat.
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79285522-712e0380-7edb-11ea-80a2-c3e8fc5885d8.png"/>
+</p> 
+
 ### 2.4.3 Applications of 7805 IC
  * Fixed-Output Regulator
  * Positive Regulator in Negative Configuration
