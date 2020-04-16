@@ -83,7 +83,7 @@ __CIN__
 Pin 5. If CIN is logic 1, the counter won’t count at all. When CIN goes to logic 0, the counter operates normally.
 
 __PE__
-The PE input is the preset enable line. When this line is logic 0, the counter operates normally. However, when pe becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
+The PE input is the preset enable line. When this line is logic 0, the counter operates normally. However, when PE becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
 
 ### Multiple 4029s
 If multiple 4029s are cascaded for a larger count, all up/dn pins are connected together and driven from a common signal, as are all bin/dec lines. The CIN and COUT lines form the means of cascading counters and still keeping a fully synchronous count. 
