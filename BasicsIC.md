@@ -20,28 +20,22 @@ The IC consists of 2 comparators made of op amps, a discharge transistor, potent
 <img src="https://user-images.githubusercontent.com/58845531/79270640-20f37900-7ebc-11ea-9a36-8fcd124b9145.png"/>
 </p> 
 
-__GND Pin__
-
+__GND PIN__
 Pin-1 is a GND pin which is used to supply a zero voltage to the IC.
 
-__Trigger Pin__
-
+__TRIGGER PIN__
 Pin 2 is the trigger pin and connected to the inverting input of the lower comparator. A comparator essentially compares the voltages given at the two inputs. If the voltage at non inverting input is greater, it basically gives a digital output of 1 otherwise 0. The output here depends on the voltage given at trigger pin. These binary values convert the flip flop from set to RST (reset)
 
-__Output Pin__
-
+__OUTPUT PIN__
 Pin 3 is the output pin. It gets the output from the flip flop.
 
-__Reset Pin__
-
+__RESET PIN__
 Resets the flip flop
 
-__Control Voltage Pin__
-
+__CONTROL VOLTAGE PIN__
 Pin-5 is the control voltage pin used to control the pulse width of the output waveform and also the levels of threshold and trigger. When an external voltage is applied to this pin, then the output waveform will be modulated
 
-__Threshold Pin__
-
+__THRESHOLD PIN__
 Pin-6 is the threshold pin, when the voltage is applied to threshold pin, then it contrasts with a reference voltage. The set state of the FF can be depends on the amplitude of this pin.
 
 Pin 7 is the discharge pin and pin 8 is voltage supply
@@ -79,21 +73,17 @@ The internal schematic diagram of the 4029 is quite complex. However, we can’t
 case, so the functional diagram to the right is far more useful for our purposes.
 Most of the designations are straightforward and intuitive.
 
-__UP/DN__
-
+__UP/DN__ 
 Pin 10 tells the counter to count up if it is a logic 1, or down when it is logic 0
 
 __BIN/DEC__
-
 A logic 1 to the bin/dec input i.e Pin 9 causes the counter to operate in binary mode, while a logic 0 switches it to decimal (sometimes called decade) mode.
 
 __CIN__
-
 Pin 5. If CIN is logic 1, the counter won’t count at all. When CIN goes to logic 0, the counter operates normally.
 
 __PE__
-
-The pe input is the preset enable line. When this line is logic 0, the counter operates normally. However, when pe becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
+The PE input is the preset enable line. When this line is logic 0, the counter operates normally. However, when pe becomes logic 1, the logic signals present on the four jam input lines get copied directly to the four bits of the counter, overriding any prior count.
 
 ### Multiple 4029s
 If multiple 4029s are cascaded for a larger count, all up/dn pins are connected together and driven from a common signal, as are all bin/dec lines. The CIN and COUT lines form the means of cascading counters and still keeping a fully synchronous count. 
