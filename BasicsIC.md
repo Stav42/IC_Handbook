@@ -3,21 +3,6 @@
 Integrated Circuits(IC) are the cornerstone of modern electronics. They are basically an arrangement of various electronics components like op-amps,resistors, transistors etc. They are used extensively. 
 
 
-## 7447 IC
-74LS47 is a BCD to 7-segment decoder/driver IC. It accepts a binary coded decimal as input and converts it into a pattern to drive a seven-segment for displaying digits 0 to 9. Binary coded decimal (BCD) is an encoding in which each digit of a number is represented by its own binary sequence (usually of four bits).
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/58845531/79281587-af71f580-7ed0-11ea-875c-7778e023ca34.png"/>
-</p> 
-
-### Description
-74LS47 IC accepts four lines of BCD (8421) input data and generates their complements internally. The data is decoded with seven AND/OR gates to drive indicator LEDs of the seven segment directly. The following picture clarifies the functioning a bit
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/58845531/79281751-07a8f780-7ed1-11ea-9dd6-a2e09b48ff55.png"/>
-</p> 
-
-Here the boxes represent 1 * 1 + 1 * 2 + 0 * 4 + 0 * 8 = 3 which is shown in the LED display.
 
 ## 7805 IC
 A voltage regulator IC maintains the output voltage at a constant value. 7805 IC, a member of 78xx series of fixed linear voltage regulators is a popular voltage regulator integrated circuit (IC).
