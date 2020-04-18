@@ -63,4 +63,4 @@ The truth table is given below
 <img src="https://user-images.githubusercontent.com/58845531/79627003-66c96f00-8152-11ea-8b06-57178dafdbd5.png"/>
 </p> 
 
-Datasheet - http://www.ti.com/lit/ds/symlink/sn74lvc2g157.pdf
+Datasheet is [here](http://www.ti.com/lit/ds/symlink/sn74lvc2g157.pdf)
