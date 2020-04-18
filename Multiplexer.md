@@ -41,3 +41,5 @@ The logic equation for the 2:1 Multiplexer is Z = A’ I0 + AI1. The truth table
 <img src="https://user-images.githubusercontent.com/58845531/79625924-09c9bb00-814a-11ea-94b3-d19dd37b1a4f.jpg"/>
 </p> 
 
+Here the select line is A. The input lines are I0 and I1. The output line is Z. If A is 0, the AND gate with I0 gives output zero. But because of the NOT gate, the AND gate with I1 gets 1 as one of the input. The output of the lower AND gate becomes A'I1 which is simply I1. So we get I1 as output. If we toggle A we get I0 as output.
+
