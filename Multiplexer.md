@@ -43,12 +43,24 @@ The logic equation for the 2:1 Multiplexer is Z = A’ I0 + AI1. The truth table
 
 Here the select line is A. The input lines are I0 and I1. The output line is Z. If A is 0, the AND gate with I0 gives output zero. But because of the NOT gate, the AND gate with I1 gets 1 as one of the input. The output of the lower AND gate becomes A'I1 which is simply I1. So we get I1 as output. If we toggle A we get I0 as output.
 
-# Multiplexer ICs
+# Multiplexer IC 74157
 
-In some cases, two or more multiplexers are fabricated on a single IC because simple logic gates can implement the multiplexer. Generally four 2 line to 1 line multiplexers are fabricated in a single IC as shown in figure below. Some of these ICs of 2 to 1 multiplexers include IC 74157 and IC 74158. The selection line controls the input lines to the output in all four multiplexers.
-
-The output Y1 can be selected such that its value may be equal to A1 or B1, Y2 can be either A2 or B2 and so on. The control input E enables and disables all the multiplexers, i.e., when E=1, outputs of all the multiplexer is zero irrespective of the value of S
+In some cases, two or more multiplexers are fabricated on a single IC because simple logic gates can implement the multiplexer. Generally four 2 line to 1 line multiplexers are fabricated in a single IC as shown in figure below. Some of these ICs of 2 to 1 multiplexers include __IC 74157__ and IC 74158. The selection line controls the input lines to the output in all four multiplexers. The pin diagram is given below
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/58845531/79626277-8067b800-814c-11ea-8898-88312ad27939.jpg"/>
+<img src="https://user-images.githubusercontent.com/58845531/79626874-65e40d80-8151-11ea-85b4-cee2f1282c8d.png"/>
 </p> 
+
+The output Y1 can be selected such that its value may be equal to A1 or B1, Y2 can be either A2 or B2 and so on. The Strobe G enables and disables all the multiplexers, i.e., when G=1, outputs of all the multiplexer is zero irrespective of the value of SELECT line.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79626822-d3436e80-8150-11ea-99dd-fe2f15a0629e.png"/>
+</p> 
+
+The truth table is given below
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79627003-66c96f00-8152-11ea-8b06-57178dafdbd5.png"/>
+</p> 
+
+
