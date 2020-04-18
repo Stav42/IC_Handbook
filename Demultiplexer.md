@@ -59,3 +59,5 @@ Each of the two demux accept two binary weighted inputs (A0, A1) and provide fou
 <p align="center">
 <img src="https://user-images.githubusercontent.com/58845531/79628833-43a6bb80-8162-11ea-80b6-6ed28f4f1e25.png"/>
 </p> 
+
+Here is the [datasheet](https://www.uni-kl.de/elektronik-lager/417705)
