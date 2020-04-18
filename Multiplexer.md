@@ -3,10 +3,10 @@ Multiplexing is the property of combining one or more signals and transmitting o
 
 There are four types of Multiplexers
  
- * 1.2-1 multiplexer ( 1select line)
- * 2.4-1 multiplexer (2 select lines)
- * 3.8-1 multiplexer(3 select lines)
- * 4.16-1 multiplexer (4 select lines)
+ * 2-1 multiplexer ( 1select line)
+ * 4-1 multiplexer (2 select lines)
+ * 8-1 multiplexer(3 select lines)
+ * 16-1 multiplexer (4 select lines)
  
 We will study the concept of multiplexing through a __2-1 multiplexer__. This is the simplest case and the rest are just more complex applications of the same concept.
 
