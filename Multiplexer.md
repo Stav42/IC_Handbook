@@ -64,3 +64,4 @@ The truth table is given below
 </p> 
 
 
+Link for datasheet - http://www.ti.com/lit/ds/symlink/sn74lvc2g157.pdf
