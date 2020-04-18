@@ -1,5 +1,5 @@
  # Multiplexer
-Multiplexing is the property of combining one or more signals and transmitting on a single channel. You will get a sense of what that means as you read this tutorial. This is achieved by the device multiplexer. A multiplexer is the most frequently used combinational circuits and important building block in many in digital systems.
+Multiplexing is the property of combining one or more signals and transmitting on a single channel. You will get a sense of what that means as you read this tutorial. This is achieved by the device multiplexer (or __mux__). A multiplexer is the most frequently used combinational circuits and important building block in many in digital systems.
 
 There are four types of Multiplexers
  
