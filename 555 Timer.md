@@ -120,4 +120,4 @@ This is the simplest state of operation. It is called bistable because it remain
 2. Voltage controlled oscillator
 3. Ramp generator
 
-Here is the [datasheet](http://www.ti.com/lit/ds/symlink/lm555.pdf)
+__The datasheet is available [here](http://www.ti.com/lit/ds/symlink/lm555.pdf)__
