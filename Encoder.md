@@ -79,7 +79,9 @@ IC 74148 is a 8 to 3 priority encoder. The input pins (0,1,2,...,7) give us the 
 <img src="https://user-images.githubusercontent.com/58845531/79679343-e6bf0a00-8222-11ea-8f32-736e8a1f4861.png"/>
 </p> 
 
-Here __E1__ is the active LOW enable pin that activates the encoder. If its HIGH, all the outputs will be low. The __E0__ is active LOW output that works in place of the output __V__ previously mentioned. It only accounts for the input pins, not for the enable pin E1. __GS__ is a more complete form of output __V__ tht takes care of everything. The __truth table__ should mke it fairly clear.  
+Here __E1__ is the active LOW enable pin that activates the encoder. An active LOW device takes a LOW input to turn itself ON and outputs 0 if its working. It basically reverses all input and output values.
+
+The __E0__ is active LOW output that works in place of the output __V__ previously mentioned. It only accounts for the input pins, not for the enable pin E1. __GS__ is a more complete form of output __V__ tht takes care of everything. The __truth table__ should mke it fairly clear.  
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/58845531/79679506-2f2af780-8224-11ea-9dca-21f386559bf9.png"/>
