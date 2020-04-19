@@ -10,3 +10,4 @@ Integrated Circuits (ICs) are the cornerstone of modern electronics. They are ba
 * [7805 IC](https://github.com/Stav42/IC_Handbook/blob/master/7805IC.md)
 * [Multiplexer](https://github.com/Stav42/IC_Handbook/blob/master/Multiplexer.md)
 * [Demultiplexer](https://github.com/Stav42/IC_Handbook/blob/master/Demultiplexer.md)
+* [Decoder](https://github.com/Stav42/IC_Handbook/blob/master/Decoder.md)
