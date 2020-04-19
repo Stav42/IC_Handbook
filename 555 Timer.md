@@ -76,6 +76,23 @@ Following are the standard formula:
 
 ## How does a 555 Timer work in Monostable Mode of Operation?
 
+A monostable 555 timer gives HIGH output only for a specific period after which it goes to LOW output and stays there. This time interval where it stays HIGH is dependant on value of resistor and capacitor. A switch is used to turn it ON.
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79682659-9acf8d80-8241-11ea-88b1-0b6f86b4bd7d.png"/>
+</p> 
+
+We shall assume out Flip flop is in initial latch state of Q = 0. This means that when S and R are both LOW, Q is LOW.
+
+* Initially when the switch is open, comparators give outputs 0. Therefore R and S are LOW. Since Q' feeds into the discharge transistor, its HIGH state turns the transistor on and Vcc along with any charge on capacitor discharges. 
+* After the switch is pressed, Lower comparators gives HIGH output. Q goes HIGH. Q' goes LOW which turns off the discharge transistor. This allows the capacitor to get charged. 
+* As soon as the charge on capacitor is high enough, the upper comparator turns ON, and sets R high. This turns Q low. Q' goes HIGH which turns on the discharge transistor. This drains the capacitor. Eventually the upper comparator goes to 0.
+* Now both comparators are at 0 and Q is LOW. This is the initial state of the timer. This is repeated after we again press the switch
+
+Therefore its up to the user to decide when to turn on the timer. The duration for which it stays on is dependant on the resistor and capacitor.
+
+Formula for duration of HIGH state: Time = 1.1 x R x C
 
 
 
