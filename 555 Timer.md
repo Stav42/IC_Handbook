@@ -9,6 +9,12 @@ oscillator applications. Its one of the most used ICs in the industry. It has 8 
 
 A 555 timer is operated in 3 modes - __Astable, Monostable, Bistable__.
 
+Contents 
+
+* [Inside the IC](#inside-the-ic)
+    * [Comparator](#comparator)
+    * [Flip Flop](#flip-flops)
+* [Astable Mode of Operation](#how-does-a-555-timer-work-in-astable-mode-of-operation?)    
 ## Inside the IC
 
 The IC consists of 2 __comparators__, a __discharge transistor__, __potential dividers__ (resistor in this case) and a __RS flip flop__. The block diagram is given below
@@ -32,7 +38,9 @@ Summary:
 * When __Vin < Vref__, __Vout__ =  __0V__.
 
 
-### Flip Flops (SR Latch)
+### Flip Flops
+
+A flip flop is basically a SR Latch.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/58845531/79681405-b03fba00-8237-11ea-8574-7d570c0b8b64.gif"/>
