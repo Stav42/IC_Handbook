@@ -9,11 +9,9 @@ oscillator applications. Its one of the most used ICs in the industry. It has 8 
 
 A 555 timer is operated in 3 modes - __Astable, Monostable, Bistable__.
 
-Contents 
+Since this is a pretty long tutorial, the contents are as follow
 
 * [Inside the IC](#inside-the-ic)
-    * [Comparator](#comparator)
-    * [Flip Flop](#flip-flops)
 * [Astable Mode of Operation](#how-does-a-555-timer-work-in-astable-mode-of-operation)
 * [Monostable Mode of Operation](#how-does-a-555-timer-work-in-monostable-mode-of-operation)
 * [Bistable Mode of Operation](#how-does-a-555-timer-work-in-bistable-mode-of-operation)
