@@ -7,7 +7,7 @@ Therefore it 'encodes' a 2^n long binary string to a n long binary string. A com
 Since this is a pretty long tutorial, the contents are as follow:
 
 * [Octal to Binary Encoder](##-octal-to-binary-encoder)
-* [Priority Encoder](#priority-encoder)
+* [Priority Encoder](##priority-encoder)
 
 ## Octal to Binary Encoder
 
@@ -36,6 +36,6 @@ We can implement the above Boolean functions by using four input OR gates. The _
 
 The above circuit diagram contains three 4-input OR gates. These OR gates encode the eight inputs with three bits.
 
-# Priority Encoder
+## Priority Encoder
 
 yo yo yo
