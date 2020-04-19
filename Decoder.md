@@ -5,6 +5,11 @@ A __decoder__ is a circuit that changes a code into a set of signals. It is call
 Decoder is a combinational circuit that has ‘n’ input lines and maximum of 2^n output lines. One of these outputs will be active High based on the combination of inputs present, when the decoder is enabled. That means decoder detects a particular code.
 You'll get a sense of what that means as you read on.
 
+Content
+* [2 To 4 Decoder](#2-to-4-decoder)
+* [3 To 8 Decoder](#3-to-8-decoder)
+* [74138 IC](#74138-ic)
+
 ## 2 To 4 Decoder
 
 Let 2 to 4 Decoder has two inputs A1 & A0 and four outputs Y3, Y2, Y1 & Y0. The __block diagram__ of 2 to 4 decoder is shown in the following figure.
