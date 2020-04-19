@@ -7,7 +7,7 @@ Therefore it 'encodes' a 2^n long binary string to a n long binary string. A com
 Since this is a pretty long tutorial, the contents are as follow:
 
 * [Octal to Binary Encoder](##-octal-to-binary-encoder)
-* [Priority Encoder](##priority-encoder)
+* [Priority Encoder](https://github.com/Stav42/IC_Handbook/blob/master/Encoder.md##priority-encoder)
 
 ## Octal to Binary Encoder
 
