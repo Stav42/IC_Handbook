@@ -60,4 +60,4 @@ The __truth table__ is given below
 
 Here E1, E2, E3 are G2A, G2b, and G1 respectively. Remember E1 and E2 are active LOW inputs.
 
-Here is the [datasheet](https://www.ti.com/lit/ds/symlink/sn54ls138-sp.pdf)
+__The datasheet is available [here](https://www.ti.com/lit/ds/symlink/sn54ls138-sp.pdf)__
