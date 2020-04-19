@@ -17,6 +17,7 @@ Contents
 * [Astable Mode of Operation](#how-does-a-555-timer-work-in-astable-mode-of-operation)
 * [Monostable Mode of Operation](#how-does-a-555-timer-work-in-monostable-mode-of-operation)
 * [Bistable Mode of Operation](#how-does-a-555-timer-work-in-bistable-mode-of-operation)
+* [Applications](#applications)
 
 ## Inside the IC
 
@@ -51,9 +52,9 @@ A flip flop is basically a SR Latch.
 
 In simple terms, when __S__ (called __SET__) is HIGH, The ouput __Q__ is HIGH. The important thing about flip flop is that it remembers that configuration. Now it doesn't matter whether S is HIGH or LOW. Q will remain as it is, i.e, HIGH.
 
-Now, in order to turn Q LOW, we have to turn RESET high. Q remains LOW until again we turn S high.
+Now, in order to turn Q LOW, we have to turn __R__ high. Q remains LOW until again we turn S high.
 
-Both Q and S cannot be HIGH at the same time. This is considered an invalid configuration.
+Both R and S cannot be HIGH at the same time. This is considered an invalid configuration.
 
 
 ## How does a 555 Timer work in Astable Mode of Operation?
@@ -105,14 +106,20 @@ Therefore its up to the user to decide when to turn on the timer. The duration f
 
 Formula for duration of HIGH state: Time = 1.1 x R x C
 
+## How does a 555 Timer work in Bistable Mode of Operation?
 
+This is the simplest state of operation. It is called bistable because it remains stable in both ON and OFF state. The flip flop has a RESET pin which is Pin 4 of the IC. This brings the flip flop back to initial state ( when both R and S are LOW).
 
-Article - https://www.edgefx.in/555-timer-ic-introduction-and-working-with-operating-modes/
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79683450-dec59100-8247-11ea-91ff-e8a03c3d0297.gif"/>
+</p> 
 
-Video Explanation - https://youtu.be/i0SNb__dkYI
+* As we press S1 switch, Trigger pin goes LOW which results in S being HIGH. This, in turn, results in Q being HIGH which is our output. The flip flop remains in this state indefinitely. Therefore the ON state is stable.
+* To turn it off, press S2 which turns the RESET pin high. The RESET pin is in an active LOW state which means it takes LOW input to get active. The RESET button brings the flip flop back to initial state. Therefore Q becomes 0. The output turns LOW.
 
 ### Applications
 1. Monostable multivibrator
 2. Voltage controlled oscillator
 3. Ramp generator
 
+Here is the [datasheet](http://www.ti.com/lit/ds/symlink/lm555.pdf)
