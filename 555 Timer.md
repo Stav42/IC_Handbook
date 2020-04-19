@@ -45,7 +45,7 @@ Now, in order to turn Q LOW, we have to turn RESET high. Q remains LOW until aga
 Both Q and S cannot be HIGH at the same time. This is considered an invalid configuration.
 
 
-## How does a 555 Timer works?
+## How does a 555 Timer work in Astable Mode of Operation?
 
 
 <p align="center">
@@ -67,6 +67,16 @@ The __waveform__ of pulses is given below
 <p align="center">
 <img src="https://user-images.githubusercontent.com/58845531/79682044-bdab7300-823c-11ea-9abd-492a985e6889.gif"/>
 </p> 
+
+Following are the standard formula:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79682098-40343280-823d-11ea-9269-97a8016379be.png"/>
+</p> 
+
+## How does a 555 Timer work in Monostable Mode of Operation?
+
+
 
 
 Article - https://www.edgefx.in/555-timer-ic-introduction-and-working-with-operating-modes/
