@@ -93,4 +93,4 @@ The __internal logic circuit__ is given below
 <img src="https://user-images.githubusercontent.com/58845531/79679617-ecb5ea80-8224-11ea-91c3-79df43aa6452.png"/>
 </p> 
 
-Here is the [datasheet](http://www.ti.com/lit/ds/symlink/sn74ls148.pdf)
+__The datasheet is available [here](http://www.ti.com/lit/ds/symlink/sn74ls148.pdf)__
