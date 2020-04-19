@@ -4,6 +4,8 @@ An Encoder is a combinational circuit that performs the reverse operation of Dec
 
 Therefore it 'encodes' a 2^n long binary string to a n long binary string. A combination of 4 ones and zeroes is encoded to a combination of 2 ones and zeroes. This will become apparent as you read on. It is optional to represent the enable signal in encoders.
 
+A normal Encoder has a few drawbacks. They are solved by modifying the normal encoders to make a __priority encoder__.
+
 Since this is a pretty long tutorial, the contents are as follow:
 
 * [Octal to Binary Encoder](#octal-to-binary-encoder)
@@ -70,3 +72,17 @@ We can implement the above Boolean functions using logic gates. The __circuit di
 The above circuit diagram contains two 2-input OR gates, one 4-input OR gate, one 2input AND gate & an inverter. Here AND gate & inverter combination are used for producing a valid code at the outputs, even when multiple inputs are equal to ‘1’ at the same time. Hence, this circuit encodes the four inputs with two bits based on the priority assigned to each input.
 
 ## IC 74148
+
+IC 74148 is a 8 to 3 priority encoder. The input pins (0,1,2,...,7) give us the information to be encoded. The output pins are A0,A1,A2. The __pin diagram__ is given below.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79679343-e6bf0a00-8222-11ea-8f32-736e8a1f4861.png"/>
+</p> 
+
+Here __E1__ is the active LOW enable pin that activates the encoder. If its HIGH, all the outputs will be low. The __E0__ is active LOW output that works in place of the output __V__ previously mentioned. It only accounts for the input pins, not for the enable pin E1. __GS__ is a more complete form of output __V__ tht takes care of everything. The __truth table__ should mke it fairly clear.  
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58845531/79679506-2f2af780-8224-11ea-9dca-21f386559bf9.png"/>
+</p> 
+
+Here is the [datasheet](http://www.ti.com/lit/ds/symlink/sn74ls148.pdf)
