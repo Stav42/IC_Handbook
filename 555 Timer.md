@@ -14,7 +14,7 @@ Contents
 * [Inside the IC](#inside-the-ic)
     * [Comparator](#comparator)
     * [Flip Flop](#flip-flops)
-* [Astable Mode of Operation](#how-does-a-555-timer-work-in-astable-mode-of-operation?)    
+* [Astable Mode of Operation](#how-does-a-555-timer-work-in-astable-mode-of-operation)    
 ## Inside the IC
 
 The IC consists of 2 __comparators__, a __discharge transistor__, __potential dividers__ (resistor in this case) and a __RS flip flop__. The block diagram is given below
