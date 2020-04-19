@@ -19,17 +19,12 @@ The IC consists of 2 comparators, a discharge transistor, potential dividers (re
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/58845531/79681118-e7609c00-8234-11ea-86ef-f016320b8805.png"/>
+<img src="https://user-images.githubusercontent.com/58845531/79681138-48886f80-8235-11ea-94b4-2195129b9e33.png"/>
 </p> 
 
 
 
-__THRESHOLD PIN__
-Pin-6 is the threshold pin, when the voltage is applied to threshold pin, then it contrasts with a reference voltage. The set state of the FF can be depends on the amplitude of this pin.
 
-Pin 7 is the discharge pin and pin 8 is voltage supply
-
-They are used in three modes - __Astable, Monostable, Bistable__. Look'em up
 
 Article - https://www.edgefx.in/555-timer-ic-introduction-and-working-with-operating-modes/
 
